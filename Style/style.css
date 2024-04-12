@@ -1,0 +1,241 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "salsa";
+    src: url(../webfonts/Salsa-Regular.ttf);
+}
+@font-face {
+  font-family: "lob";
+  src: url(../webfonts/Lobster-Regular.ttf);
+}
+/* ------------- */
+.qoutes
+{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/pexels-photo-2740954.webp);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+.qoute-caption
+{
+
+    border: 4px solid white;
+    width: 750px;
+    height: 410px;
+    background-color: rgba(0,0,0,0.7);
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    font-family: "salsa";
+    position: relative;
+    color: white;
+    top: -10%;
+
+}
+.qoute-caption img
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 4%;
+    cursor: pointer;
+
+}
+.qoute-icons
+{
+    font-size: 25px;
+
+}
+.qoute-caption button:not(.Randoms)
+{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.qoute-icons i
+{
+    cursor: pointer;
+    transition: color 0.8s;
+    font-size: 25px !important;
+
+}
+.qoute-icons button:nth-child(1):hover i
+{
+    color: rgb(205, 58, 17);
+
+}
+
+.qoute-icons button:nth-child(2):hover i
+{
+    color: rgb(15, 54, 192);
+
+}
+
+.qoute-icons  a:nth-child(3):hover i
+{
+    color: rgb(15, 113, 28);
+
+}
+
+
+
+button 
+{
+    border-radius: 800px;
+    padding: 5px 10px;
+    
+}
+.qoute-footer
+{
+    width: 90%;
+    
+}
+
+
+
+/* for toast */
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+ #snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #0e641f; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  } 
+
+  article p
+  {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width:800px) {
+
+    .qoute-caption
+    {
+        height: 500px;
+    }
+    
+  }
+.viewAll
+{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  font-family: "lob";
+  font-size: 20px;
+
+}
+.fs-lob
+{
+  font-family: "lob";
+  margin-left: auto;
+  font-size: 25px !important;
+
+}
+.fa-box-open
+{
+  color: rgb(141, 33, 119);
+}
+
+
+
+
+
+
+/* .Randoms:hover i
+{
+  animation: Rotate 1.5s infinite;
+} */
+
+.transform-active
+{
+  animation: Rotate 1.5s ;
+}
+
+@keyframes Rotate {
+  
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+
+}
+
+
+::selection
+{
+  background-color: rgb(234, 0, 255);
+}
+
+.carousel-item img
+{
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+.modal-dialog .modal-content
+{
+  background-image: linear-gradient(
+    45deg,
+    hsl(206deg 100% 20%) 0%,
+    hsl(228deg 46% 32%) 14%,
+    hsl(265deg 41% 36%) 29%,
+    hsl(300deg 52% 33%) 43%,
+    hsl(319deg 100% 33%) 57%,
+    hsl(333deg 100% 38%) 71%,
+    hsl(345deg 100% 42%) 86%,
+    hsl(0deg 100% 43%) 100%
+  );
+  color: white;
+}
+
+.carousel-control-prev i,.carousel-control-next i
+{
+  color: #c8cce1 !important;
+}
+  /*  */

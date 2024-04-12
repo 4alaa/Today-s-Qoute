@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="alaa shamms">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>today's quote</title>
+    <!-- link of title icon -->
+    <link rel="shortcut icon" href="images/title/q.png" type="image/x-icon" >
+
+    <link rel="stylesheet" href="Style/fancybox.css">
+
+    <!-- link of fontawesome -->
+    <link rel="stylesheet" href="Style/all.min.css">
+    <!-- link of bootstrap -->
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <!-- link of css -->
+    <link rel="stylesheet" href="Style/style.css">
+
+    
+
+
+
+</head>
+<body>
+    
+    <div class="qoutes">
+
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center vh-100">
+
+                <div class="qoute-caption d-flex justify-content-center align-items-center flex-column">
+                    <img src="images/writtenBy/Martin.jpg" class="rounded-circle" alt="" id="authorImg" data-fancybox="Authors" data-src="images/writtenBy/Martin.jpg">
+                    <i class="fas fa-quote-left fa-lg text-warning me-auto"></i>
+                    <article class="mx-4 my-5  textToCopy" id="allAbout" >
+                        <p id="write">            
+                        
+                            Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.
+
+
+                        </p>
+                        
+                        <span class="mb-0  d-block text-center mt-1" id="author">― Martin Luther</span>
+                    </article>
+                    <i class="fas fa-quote-right fa-lg text-warning ms-auto"></i>
+
+                    <div class="qoute-footer  d-flex mx-auto my-4 justify-content-between">
+                        <div class="qoute-icons d-flex gap-4">
+                            <!-- 1 -->
+                            <button id="copy">
+                                <i class="fa-solid fa-copy" title="copy to clipboard"></i>
+                            </button>
+                            <!-- 2 -->
+                            <button id="plays" >
+                                <i class="fa-solid fa-volume-high"  title="Text to Speech " ></i>
+                            </button>
+                            <!-- 3 -->
+                                <a class="shareWhatsapp" target="_blank" data-message="Te comparto el perfil de Henry Raygan" url="" onclick="sendViaWhatsapp()">
+                                 <button>
+
+                                    <i class="fa-brands fa-whatsapp" title="Share in whatsapp"></i>
+                                </button>
+
+                                </a>
+                        </div>
+
+
+                        <button class="bg-info border-0 Randoms" id="Randoms"  onclick="randomQoute()">
+                            <i class="fa-solid fa-arrow-rotate-right me-1"></i> Random Qoute
+                        </button>
+
+                        <!-- twest -->
+                        <div id="snackbar">Qoute copied successfully <i class="fa-solid fa-check"></i></div> 
+
+                    </div>
+                    </div>
+                    
+
+    
+            </div>
+        </div>
+
+        <button class="viewAll" data-bs-toggle="modal" data-bs-target="#exampleModal" title="View all quotes"><i class="fa-solid fa-box-open me-2"></i>View all quotes</button>
+
+    </div>
+
+
+
+<!-- modal for all qoutes -->  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fs-lob" id="exampleModalLabel">All Qoutes</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000" >
+                    <img src="images/writtenBy/Martin.jpg" class="rounded-circle  d-block mx-auto" alt="" >
+                    <p class="text-center">
+                        Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.
+                    </p>
+                    <h6 class="text-center">― Martin Luther</h6>
+                  </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span  aria-hidden="true"> <i class="fa-solid fa-circle-left fa-2x"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                   
+                    <span  aria-hidden="true"> <i class="fa-solid fa-circle-right fa-2x"></i></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+    <div class="buttons d-none ">
+        <button id="play"></button> &nbsp;
+        <button id="pause"></button> &nbsp;
+        <button id="stop"></button>
+    </div>
+
+
+    
+
+
+
+    <!-- link of jquery -->
+    <script src="JS/jquery-3.7.1.min.js"></script>
+
+    <script src="JS/fancybox.umd.js"></script>
+
+    <!-- link of bootsrap js  -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- link of mine js -->
+    <script src="JS/index.js"></script>
+</body>
+</html>
